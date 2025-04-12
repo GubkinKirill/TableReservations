@@ -23,7 +23,7 @@ def create_reservation(reservation: ReservationCreate, db: Session = Depends(get
     if has_conflict(db, reservation):
         raise HTTPException(status_code=409, detail="Table is already reserved for this time slot")
 
-    new_res = Reservation(**reservation.dict())
+    new_res = Reservation(**reservation.model_dump())
     db.add(new_res)
     db.commit()
     db.refresh(new_res)
