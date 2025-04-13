@@ -1,4 +1,66 @@
-venv/
+# Python
 __pycache__/
-*.db
+*.py[cod]
+*.egg
+*.egg-info/
+*.pyo
+*.pyd
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pip-log.txt
+
+# Virtualenv
+.venv/
+
+# VSCode
+.vscode/
+
+# Pytest
+.pytest_cache/
+htmlcov/
+.coverage
+.cache
+.noseids
+test-results.xml
+
+# Alembic
+alembic/versions/*.pyc
+alembic/versions/__pycache__/
+
+# SQLite (если осталась локальная)
 *.sqlite3
+test.db
+# MyPy / Pylint
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# Env files
+.env
+.env.*
+
+# Mac / Linux
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# IDEs
+.idea/
+*.iml
+
+# Build
+dist/
+build/
+*.egg-info/
+
+# Docker
+*.pid
+*.pid.lock
+docker-compose.override.yml
